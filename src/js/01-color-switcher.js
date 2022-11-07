@@ -10,9 +10,8 @@ function getRandomHexColor() {
     document.body.style.backgroundColor = getRandomHexColor();
     }, 1000)
     
-        startBtn.disabled = true;
-        stopBtn.disabled = false;
-   
+    startBtn.disabled = true;
+    stopBtn.disabled = false;
   })
 
   stopBtn.addEventListener ('click', () => {
