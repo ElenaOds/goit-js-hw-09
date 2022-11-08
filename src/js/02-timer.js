@@ -43,6 +43,8 @@ const options = {
         const result = convertMs(deltaTime);
         timerDisplay(result);
      }, 1000);
+
+     startBtn.disabled = true;
     });
 
   },
