@@ -25,12 +25,14 @@ const options = {
     if (selectedDates[0] < new Date()) {
       Notiflix.Notify.failure('Please choose a date in the future');
       startBtn.disabled = true;
+      return;
     } else {
         startBtn.disabled = false;
     }
     
 
     startBtn.addEventListener('click', () => {
+      
       timer = setInterval(() => {
         const deltaTime = selectedDates[0] - new Date();
     
